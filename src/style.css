@@ -5,6 +5,7 @@
 
 @theme {
   --color-primary: #EBEBEB;
+  --color-secondary: #FF3928;
 }
 
 body {
@@ -14,3 +15,7 @@ body {
     overflow-x: hidden;
 }
 
+
+.debug {
+    border: 1px solid red;
+}
