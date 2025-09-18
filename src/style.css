@@ -4,15 +4,19 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #EBEBEB;
-  --color-secondary: #FF3928;
+    --color-primary: #EBEBEB;
+    --color-secondary: #FF3928;
 }
 
+html,
 body {
     font-family: 'Inter';
     font-optical-sizing: auto;
-    scroll-behavior: smooth;
     overflow-x: hidden;
+}
+
+img {
+    cursor: pointer;
 }
 
 
