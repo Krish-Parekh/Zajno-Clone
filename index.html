@@ -26,8 +26,20 @@
     </div>
     <img id="img" src="./zajno.png" alt="">
   </nav>
-  <section class="w-full h-[80vh]">
+  <section id="video-section" class="w-full h-[80vh] relative">
+    <button class="absolute top-1/2 left-1/2 z-[2] -translate-x-1/2 -translate-y-1/2">
+      <h3 class="font-bold text-lg tracking-tight px-5 py-4 bg-[var(--color-primary)] rounded-full">Watch Showreel</h3>
+    </button>
     <img src="./video.jpg" alt="video-img" class="w-full h-full object-cover object-top">
+  </section>
+  <div class="mt-20"></div>
+  <section id="work-section" class="w-full flex px-4 py-5">
+    <div class="flex items-baseline gap-4">
+      <h3 class="text-3xl md:text-4xl font-bold tracking-tight leading-none">Work</h3>
+      <svg width="22" height="23" viewBox="0 0 22 23">
+        <polygon points="14,7 14,15.923 2.976,4.899 0.148,7.728 11.42,19 2,19 2,23 14,23 18,23 18,19 18,7"></polygon>
+      </svg>
+    </div>
   </section>
   <script type="module" src="./src/main.js"></script>
 </body>

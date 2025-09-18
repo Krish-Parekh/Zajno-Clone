@@ -3,9 +3,14 @@
 
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #EBEBEB;
+}
+
 body {
     font-family: 'Inter';
     font-optical-sizing: auto;
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+
