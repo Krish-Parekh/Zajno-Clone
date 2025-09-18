@@ -40,7 +40,6 @@ gsap.from(".footer-border", {
         start: "top 90%",
         end: "center 90%",
         scrub: true,
-        markers: true,
     },
 });
 
