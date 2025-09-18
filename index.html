@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <!-- Nav Section -->
   <nav class="relative">
     <div class="nav absolute top-0 left-0 w-full flex justify-between px-4 py-5">
       <a class="font-bold text-md tracking-tight" href="#">zajno®</a>
@@ -26,6 +27,7 @@
     </div>
     <img id="img" src="./zajno.png" alt="">
   </nav>
+  <!-- Video Section -->
   <section id="video-section" class="w-full h-[80vh] relative">
     <button class="absolute top-1/2 left-1/2 z-[2] -translate-x-1/2 -translate-y-1/2">
       <h3 class="font-bold text-lg tracking-tight px-5 py-4 bg-[var(--color-primary)] rounded-full">Watch Showreel</h3>
@@ -33,6 +35,7 @@
     <img src="./video.jpg" alt="video-img" class="w-full h-full object-cover object-top">
   </section>
   <div class="mt-20"></div>
+  <!-- Work Section -->
   <section id="work-section" class="w-full flex p-8">
     <div class="w-[10vw] md:w-[15vw] flex items-baseline gap-4">
       <h3 class="text-xs md:text-3xl font-bold tracking-tight leading-none">Work</h3>
@@ -144,6 +147,7 @@
   <div class="mt-20"></div>
   <div class="border-t-2 border-neutral-500/50 mx-8"></div>
   <div class="mt-20"></div>
+  <!-- Studio Section -->
   <section id="studio-section" class="w-full p-8">
     <div class="w-full flex">
       <div class="w-[10vw] md:w-[15vw] flex items-baseline gap-4">
@@ -195,6 +199,7 @@
   <div class="mt-20"></div>
   <div class="border-t-2 border-neutral-500/50 mx-8"></div>
   <div class="mt-20"></div>
+  <!-- Playground Section -->
   <section id="playground-section" class="w-full p-8">
     <div class="w-full flex justify-between">
       <div class="flex items-baseline gap-4">
@@ -205,7 +210,7 @@
         </svg>
       </div>
       <div class="flex max-w-lg gap-4">
-        <div class="border-l-2 border-neutral-500/50"></div>
+        <div class="playground-border border-l-2 border-neutral-500/50"></div>
         <p class="font-bold tracking-tight leading-none text-xs md:text-3xl">We dare to be different: to
           experiment, innovate, bring things into being, and spark emotions in the hearts of people interacting with us.
           We proudly stand with our heads up in the midst of today’s reality that is oversaturated with templated
@@ -214,7 +219,8 @@
     </div>
   </section>
   <div class="mt-20"></div>
-  <section class="h-screen relative overflow-hidden w-full">
+  <!-- Playground Images Section -->
+  <section id="playground-images-section" class="h-screen relative overflow-hidden w-full">
     <div class="w-full z-[2] h-full overflow-hidden flex justify-between absolute left-16 top-0">
       <div class="w-96 h-96 space-y-4">
         <img src="8.jpg" alt="" class="w-full h-full object-cover object-center">
@@ -237,10 +243,11 @@
       class="text-[50rem] md:text-[70rem] text-[var(--color-secondary)] absolute -bottom-[32rem]  leading-none tracking-tight font-bold left-0">
       715
     </div>
-  </section>
+  </section>  
   <div class="border-t-2 border-neutral-500/50 mx-8"></div>
   <div class="mt-20"></div>
-  <footer class="w-full p-8 flex items-start">
+  <!-- Footer Section -->
+  <footer id="footer-section" class="w-full p-8 flex items-start">
     <div class="flex-1">
       <svg width="150" height="50" viewBox="0 0 1877 641" fill="#1A1A1A">
         <path
@@ -270,15 +277,15 @@
     </div>
     <div class="flex-1 flex items-start justify-self-start gap-6">
       <div class="flex w-full justify-start gap-6">
-        <div class="studio-border border-l-2 border-neutral-500/50"></div>
-        <div class="studio-services flex flex-col px-4">
+        <div class="footer-border border-l-2 border-neutral-500/50"></div>
+        <div class="footer-services flex flex-col px-4">
           <h3 class="font-bold text-3xl leading-none">Work</h3>
           <h3 class="font-bold text-3xl leading-none">Studio</h3>
           <h3 class="font-bold text-3xl leading-none">Contact</h3>
           <h3 class="font-bold text-3xl leading-none mt-8">©zajno 2025</h3>
         </div>
-        <div class="studio-border border-l-2 border-neutral-500/50"></div>
-        <div class="studio-services flex flex-col px-4">
+        <div class="footer-border border-l-2 border-neutral-500/50"></div>
+        <div class="footer-services flex flex-col px-4">
           <h3 class="font-bold text-3xl leading-none">Instagram</h3>
           <h3 class="font-bold text-3xl leading-none">Twitter</h3>
           <h3 class="font-bold text-3xl leading-none">LinkedIn</h3>
@@ -288,7 +295,8 @@
       </div>
     </div>
   </footer>
-
+  <!-- Canvas -->
+  <canvas class="fixed top-0 left-0 z-[0] pointer-events-none" id="canvas"></canvas>
   <script type="module" src="./src/main.js"></script>
 </body>
 

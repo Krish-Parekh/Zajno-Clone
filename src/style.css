@@ -16,6 +16,7 @@ body {
 }
 
 img {
+    opacity: 0;
     cursor: pointer;
 }
 
