@@ -102,12 +102,16 @@ images.forEach(image => {
 });
 
 
-// This function updates the position of each 3D plane to match its corresponding HTML image element
+// This function updates the position and size of each 3D plane to match its corresponding HTML image element
 // It's called every frame to keep the 3D planes synchronized with the DOM images during scroll/resize
 function setImagePosition() {
     planes.forEach((plane, index) => {
         // Get the current screen position and dimensions of the HTML image element
         const imagePropertis = images[index].getBoundingClientRect();
+        
+        // Update the geometry to match the new image dimensions
+        plane.geometry.dispose(); // Clean up old geometry
+        plane.geometry = new THREE.PlaneGeometry(imagePropertis.width, imagePropertis.height);
         
         // Convert from screen coordinates to Three.js world coordinates:
         // - Screen origin (0,0) is top-left, Three.js origin is center
